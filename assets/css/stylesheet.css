@@ -1,4 +1,85 @@
 html {
 	font-size: 8px;
+	font-family: sans-serif;
 }
 
+/* universal styles*/
+
+h1 {
+	font-size: 3rem;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+/* header + nav */
+
+header {
+	height: 8rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 2rem;
+}
+
+#logo {
+	height: 4rem;
+	padding: 0 3rem;
+}
+
+nav {
+	padding: 0 3rem;
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+nav a {
+	padding: 0 1rem;
+	text-decoration: none;
+}
+
+/* jumbotron */
+
+#jumbo, #start {
+	background-color: lightgray;
+}
+
+#jumbo, #info, #start {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#jumbo>div {
+	padding: 4rem 3rem;
+}
+
+#info>div {
+	padding: 4rem 3rem;
+}
+
+#start>div {
+	padding: 4rem 3rem;
+}
+
+.left {
+	width: 60%;
+}
+
+.left img {
+	width: 100%;
+	height: auto;
+}
+
+.right {
+	width: 40%;
+}

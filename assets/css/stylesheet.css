@@ -1,100 +1,132 @@
+/* universal styles*/
+
 html {
 	font-size: 8px;
 	font-family: sans-serif;
 }
 
-/* universal styles*/
+body {
+	background-color: #FEFCFC;
+	color: #090306;
+}
+h1, h2, h3, h4, p {
+	padding-bottom: 1rem;
+}
 
-h1, h2, h3, h4, h5, h6, p {
-	padding: 2rem 0;
+h1, h2, h3 {
+	font-family: "Libre Baskerville", "Baskerville", serif;
+}
+
+h4, p, a {
+	font-family: "Source Sans Pro", "Helvetica", sans-serif;
 }
 
 h1 {
-	font-weight: 900;
+	font-weight: 700;
 	font-size: 5rem;
-	line-height: 5.5rem;
+	line-height: 6rem;
 }
 
 h2 {
 	font-weight: 700;
-	font-size: 3rem;
-	line-height: 4.5rem;
+	font-size: 4rem;
+	line-height: 5rem;
+	padding-top: 4rem;
 }
 
 h3 {
-	font-weight: 500;
-	font-size: 2rem;
-	line-height: 4.5rem;
+	font-weight: 400;
+	font-size: 2.5rem;
+	line-height: 4rem;
 }
 
 h4 {
-	font-size: 1rem;
-	line-height: 2rem;
-}
-
-h5 {
-	
-}
-
-h6 {
-	font-size: 4rem;
-	line-height: 5rem;
-	font-weight: 900;
+	font-weight: 500rem;
+	font-size: 1.5rem;
+	color: #707878
 }
 
 p {
 	font-size: 2rem;
 	line-height: 3rem;
+	color: #707878
 }
 
 a {
 	text-decoration: none;
-	color: black;
+	color: #32C6A6;
 	font-size: 2rem;
 }
 
 #jumbo, #classes {
-	background-color: lightgray;
+	background-color: #DDDDDD;
 }
 
-#jumbo, #info, #start, #thesis {
+.flex-cent {
 	display: flex;
 	justify-content: center;
+}
+
+.align-cent {
+	align-items: center;
+}
+
+.flex-btwn {
+	display: flex;
+	justify-content: space-between;
+}
+
+.center {
+	text-align: center;
+}
+
+.tab-mob {
+	display: none;
+}
+
+.mobile {
+		display: none;
 }
 
 /* header + nav */
 
 header {
 	height: 8rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
 }
 
-#logo {
+#logo a {
 	height: 4rem;
 	padding: 0 3rem;
+	display: flex;
+	align-items: center;
+	font-size: 2.5rem;
 }
 
-nav {
+span {
+	font-weight: 700;
+}
+
+header nav {
 	padding: 0 3rem;
 }
 
-nav ul {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+header nav a {
+	padding: 0 1rem;
+	text-transform: uppercase;
 }
 
-nav a {
-	padding: 0 1rem;
+header nav a:hover {
+	text-decoration: underline;
+	text-decoration-color: #090306;
+	transition: text-decoration 300ms ease-in-out;
+	-webkit-transition: text-decoration 300ms ease-in-out;	
+}
+
+.tab-mob nav {
+	height: 8rem;
 }
 
 /* jumbotron */
-
-#jumbo {
-	align-items: center;
-}
 
 .left {
 	width: 60%;
@@ -117,7 +149,7 @@ nav a {
 }
 
 .button {
-	background-color: darkgray;
+	background-color: #32C6A6;
 	width: 50%;
 	margin: 3rem 0;
 }
@@ -125,11 +157,16 @@ nav a {
 .button a {
 	display: block;
 	text-decoration: none;
-	color: black;
-	padding: 1rem 0;
+	padding: 2rem 0;
 	text-align: center;
 	color: white;
-	font-size: 1.5rem;
+	font-size: 2rem;
+}
+
+.button:hover {
+	box-shadow: 2px 2px 0px #FEFCFC;
+	transition: box-shadow 300ms ease-in-out;
+	-webkit-transition: box-shadow 300ms ease-in-out;
 }
 
 /* info section */
@@ -144,10 +181,9 @@ nav a {
 }
 
 .information {
-	display: flex;
 	flex-direction: row;
 	width: 100%;
-	background-color: lightgray;
+	background-color: #DDD;
 	margin: 0 0 1rem 0;
 }
 
@@ -161,25 +197,29 @@ nav a {
 	width: 60%;
 }
 
-/* start learning section */
-
-#classes h6 {
-	text-align: center;
-	padding: 4rem 0;
+.information a {
+	font-size: 1.5rem;
 }
+
+.information a:hover {
+	text-decoration: underline;
+	text-decoration-color: #090306;
+	transition: text-decoration 300ms ease-in-out;
+	-webkit-transition: text-decoration 300ms ease-in-out;	
+}
+	
+
+/* start learning section */
 
 #start {
 	flex-direction: column;
 }
 .row {
-	display: flex;
 	flex-direction: row;
-	justify-content: center;
-	align-content: center;
 }
 
 .class {
-	background-color: white;
+	background-color: #FEFCFC;
 	margin: 2rem;
 	width: 25%;
 }
@@ -190,25 +230,88 @@ nav a {
 }
 
 .class div {
-	margin: 2rem;
+	margin: 2rem;	
+}
+
+
+/*thesis section*/
+
+#thesis .left h3 {
+	padding-top: 4rem;
+}
+/* footer */
+
+footer {
+	background-color: #32C6A6;
+	font-size: 1rem;
+}
+
+footer a {
+	color: #090306;
+	padding-right: 2rem;
+}
+
+footer p {
+	color: #090306;
+}
+
+footer a:hover {
+	text-decoration: underline;
+	text-decoration-color: #FEFCFC;
+	transition: text-decoration 300ms ease-in-out;
+	-webkit-transition: text-decoration 300ms ease-in-out;
+}
+
+footer nav ul {
+	justify-content: flex-end;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 980px) {
+	.tab-mob {
+		display: block;
+	}
+	.desktop {
+		display: none;
+	}
+	
+	h1 {
+		font-size: 3.5rem;
+		line-height: 4.5rem;
+	}
+	
+	h2 {
+		font-size: 3rem;
+		line-height: 4rem;
+		padding-top: 3rem;
+	}
+	
+	h3 {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+	
+	h4 {
+		font-size: 1rem;
+	}
+	
+	p {
+		font-size: 1.5rem;
+		line-height: 2.5rem;
+	}
+	
+	a {
+		font-size: 1.5rem;
+	}
 	
 }
 
-/* Thesis section */
-
-#exhibit {
-	text-align: center;
-	padding: 4rem 0;
+@media only screen and (max-width: 780px) {
+	
+	.mobile {
+		display: block;
+	}
 }
-
-
-
-
-
-
-
-
-
-
 
 

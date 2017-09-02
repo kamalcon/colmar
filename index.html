@@ -5,34 +5,53 @@
     <title>Colmar Academy</title>
 	<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
   <link rel="stylesheet" href="assets/css/stylesheet.css" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700|Source+Sans+Pro:400,700,900" rel="stylesheet">
   </head>
 	
   <body>
 		
 		<!--Header / Nav-->
-		<header>
+		<header class="desktop flex-btwn align-cent">
 			<div id="logo">
 				<a href="index.html">
-					<img src="assets/images/ic-logo.svg">Colmar Academy
+					<img src="assets/images/ic-logo.svg">
+					<span>COLMAR</span>ACADEMY
 				</a>
 			</div>
 			<nav>
-				<ul>
+				<ul class="flex-cent">
 					<li><a href="">On Campus</a></li>
 					<li><a href="">Online</a></li>
 					<li><a href="">For companies</a></li>
 					<li><a href="">Sign In</a></li>
-				</ul></nav>
+				</ul>
+			</nav>
+		</header>
+		<header class="tab-mob flex-btwn align-cent">
+			<nav class="flex-btwn align-cent">
+				<a href="">
+					<img src="assets/images/ic-logo.svg">
+				</a>
+				<a href="">
+					<img src="assets/images/ic-on-campus.svg">
+				</a>
+				<a href="">
+					<img src="assets/images/ic-online.svg">
+				</a>
+				<a href="">
+					<img src="assets/images/ic-login.svg">
+				</a>
+			</nav>
 		</header>
 		
 		<!--Jumbotron-->
-		<div id="jumbo">
+		<div id="jumbo" class="flex-cent align-cent">
 			<div class="left">
 				<img src="assets/images/banner.jpg">
 			</div>
 			<div class="right">
 				<h1>Learn something new everyday</h1>
-				<h2>Lorem ipsum dolor sit amet, consectateur adapiscing elit.</h2>
+				<h3>Lorem ipsum dolor sit amet, consectateur adapiscing elit.</h3>
 				<div class="button">
 					<a href="">Start Here</a>
 				</div>
@@ -40,34 +59,34 @@
 		</div>
 		
 		<!--Info section-->
-		<div id="info">
+		<div id="info" class="flex-cent">
 			<div class="left">
 				<img src="assets/images/information-main.jpg">
-				<h6>It doesn't hurt to keep practicing</h6>
+				<h2>It doesn't hurt to keep practicing</h2>
 				<p>"Beetles and eggs and blues and pour a little everything else. You steam a lens stable eyes and glass. Not get pissed off through my bird lips as good news. Still we can find our love down from behind. Down far behind this fabulous, my turn rules."</p>
-				<h3>Name Lastname, hiring.com</h3>
+				<h4>Name Lastname, Hiring Manager, hiring.com</h4>
 			</div>
 			<div class="right">
-				<div class="information">
+				<div class="information flex-cent align-cent">
 					<img src="assets/images/information-orientation.jpg">
 					<div>
-						<h4>Orientation date</h4>
+						<h3>Orientation date</h3>
 						<p>Tues 10/11 &amp; Wed 10/12 8am-3pm</p>
 						<a href="">Read more</a>
 					</div>
 				</div>
-				<div class="information">
+				<div class="information flex-cent align-cent">
 					<img src="assets/images/information-campus.jpg">
 					<div>
-						<h4>Our campus</h4>
+						<h3>Our campus</h3>
 						<p>Find which campus is close by you.</p>
 						<a href="">Read more</a>
 					</div>
 				</div>
-				<div class="information">
+				<div class="information flex-cent align-cent">
 					<img src="assets/images/information-guest-lecture.jpg">
 					<div>
-						<h4>Our guest lecture</h4>
+						<h3>Our guest lecture</h3>
 						<p>Join a keynote with Oliver Sacks about music in medical treatment.</p>
 						<a href="">Read more</a>
 					</div>
@@ -76,57 +95,58 @@
 		</div>
 		
 		<!--Start Learning section-->
+		
 		<div id="classes">
-			<h6>Start learning</h6>
-			<div id="start">
-				<div class="row">
+			<h2 class="center">Start learning</h2>
+			<div id="start flex-cent">
+				<div class="row flex-cent">
 					<div class="class">
 						<img src="assets/images/course-software.jpg">
 						<div>
-							<h4>Software engineering</h4>
-							<h5>COURSES</h5>
+							<h3>Software engineering</h3>
+							<h4>COURSES</h4>
 							<p>Web Development, Mobile Development, iOT, APIs</p>
 						</div>
 					</div>
 					<div class="class">
 						<img src="assets/images/course-computer-art.jpg">
 						<div>
-							<h4>Computer art</h4>
-							<h5>COURSES</h5>
+							<h3>Computer art</h3>
+							<h4>COURSES</h4>
 							<p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
 						</div>
 					</div>
 					<div class="class">
 						<img src="assets/images/course-design.jpg">
 						<div>
-							<h4>Design</h4>
-							<h5>COURSES</h5>
+							<h3>Design</h3>
+							<h4>COURSES</h4>
 							<p>User Experience Design, User Research, Visual Design</p>
 						</div>
 					</div>
 				</div>
-				<div class="row">
+				<div class="row flex-cent">
 					<div class="class">
 						<img src="assets/images/course-data.jpg">
 						<div>
-							<h4>Data</h4>
-							<h5>COURSES</h5>
+							<h3>Data</h3>
+							<h4>COURSES</h4>
 							<p>Data Science, Big Data, SQL, Data Visualization</p>
 						</div>
 					</div>
 					<div class="class">
 						<img src="assets/images/course-business.jpg">
 						<div>
-							<h4>Business</h4>
-							<h5>COURSES</h5>
+							<h3>Business</h3>
+							<h4>COURSES</h4>
 							<p>Product Development, Business Development, Startup</p>
 						</div>
 					</div>
 					<div class="class">
 						<img src="assets/images/course-marketing.jpg">
 						<div>
-							<h4>Marketing</h4>
-							<h5>COURSES</h5>
+							<h3>Marketing</h3>
+							<h4>COURSES</h4>
 							<p>Analytics, Content Marketing, Mobile Marketing</p>
 						</div>
 					</div>
@@ -136,40 +156,44 @@
 		
 		<!--Thesis section-->
 		
-		<h6 id="exhibit">Thesis exhibit</h6>
-		<div id="thesis">
+		<h2 class="center">Thesis exhibit</h2>
+		<div id="thesis" class="flex-cent">
 			<div class="left">
 				<video width="100%" height="auto" controls>
   				<source src="assets/videos/thesis.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
-				<h6>Reimagine urban</h6>
-				<p>Beetles and eggs and blues and pour a little everything else. You steam a lens stable eyes and glass. Not get pissed off through my bird lips as good news. Still we can find our love down from behind. Down far behind this fabulous, my turn rules.</p>
-				<h3>Name Lastname, hiring.com</h3>
+				<h3>Reimagine urban</h3>
+				<p>"Beetles and eggs and blues and pour a little everything else. You steam a lens stable eyes and glass. Not get pissed off through my bird lips as good news. Still we can find our love down from behind. Down far behind this fabulous, my turn rules."</p>
+				<h4>Name Lastname, Hiring Manager, hiring.com</h4>
 			</div>
 			<div class="right">
-				<div class="information">
+				<div class="information flex-cent align-cent">
 					<img src="assets/images/thesis-fisma.jpg">
-					<h4>Fisma: Design and Prototype</h4>
-					<p>Designer showcase of new prototype product.</p>
-					<a href="">Read more</a>
+					<div>
+						<h3>Fisma: Design and Prototype</h3>
+						<p>Designer showcase of new prototype product.</p>
+						<a href="">Read more</a>
+					</div>
 				</div>
-				<div class="information">
+				<div class="information flex-cent align-cent">
 					<img src="assets/images/thesis-now-and-then.jpg">
-					<h4>Now and Then</h4>
-					<p>Research study about New York</p>
-					<a href="">Read more</a>
+					<div>
+						<h3>Now and Then</h3>
+						<p>Research study about New York</p>
+						<a href="">Read more</a>
+					</div>
 				</div>
 			</div>
 		</div>
 		
 		<!--Footer-->
 		
-		<footer>
+		<footer class="flex-btwn align-cent">
 			<div class="left"><p>Ⓒ 2016 Colmar Academy. All rights reserved.</p></div>
 			<div class="right">
 				<nav>
-					<ul>
+					<ul class="flex-cent">
 						<li><a href="">Terms</a></li>
 						<li><a href="">Privacy</a></li>
 					</ul>

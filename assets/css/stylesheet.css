@@ -9,8 +9,8 @@ body {
 	background-color: #FEFCFC;
 	color: #090306;
 }
-h1, h2, h3, h4, p {
-	padding-bottom: 1rem;
+h1, h2, h3, h4, p, a {
+	padding: .5rem 0;
 }
 
 h1, h2, h3 {
@@ -56,24 +56,27 @@ a {
 	text-decoration: none;
 	color: #32C6A6;
 	font-size: 2rem;
+	line-height: 3rem;
 }
 
 #jumbo, #classes {
 	background-color: #DDDDDD;
 }
 
-.flex-cent {
+.flex {
 	display: flex;
+}
+
+header, .tab-mob nav, footer {
+	justify-content: space-between;
+}
+
+header nav ul, #jumbo, #info, .information, .row, #thesis {
 	justify-content: center;
 }
 
-.align-cent {
+header, .tab-mob nav, #jumbo, .information, footer {
 	align-items: center;
-}
-
-.flex-btwn {
-	display: flex;
-	justify-content: space-between;
 }
 
 .center {
@@ -84,8 +87,8 @@ a {
 	display: none;
 }
 
-.mobile {
-		display: none;
+.show-mob {
+	display: none;
 }
 
 /* header + nav */
@@ -171,17 +174,7 @@ header nav a:hover {
 
 /* info section */
 
-#info {
-	align-items: flex-start;
-}
-
-#info .right {
-	display: flex;
-	flex-direction: column;
-}
-
 .information {
-	flex-direction: row;
 	width: 100%;
 	background-color: #DDD;
 	margin: 0 0 1rem 0;
@@ -195,6 +188,7 @@ header nav a:hover {
 
 .information div {
 	width: 60%;
+	padding-right: 1rem;
 }
 
 .information a {
@@ -211,13 +205,6 @@ header nav a:hover {
 
 /* start learning section */
 
-#start {
-	flex-direction: column;
-}
-.row {
-	flex-direction: row;
-}
-
 .class {
 	background-color: #FEFCFC;
 	margin: 2rem;
@@ -233,6 +220,9 @@ header nav a:hover {
 	margin: 2rem;	
 }
 
+#start {
+	padding: 2rem 0rem;
+}
 
 /*thesis section*/
 
@@ -292,13 +282,9 @@ footer nav ul {
 		line-height: 3rem;
 	}
 	
-	h4 {
-		font-size: 1rem;
-	}
-	
 	p {
 		font-size: 1.5rem;
-		line-height: 2.5rem;
+		line-height: 2.25rem;
 	}
 	
 	a {
@@ -308,10 +294,118 @@ footer nav ul {
 }
 
 @media only screen and (max-width: 780px) {
+
+	p {
+		font-size: 2rem;
+		line-height: 3rem;
+	}
+
+	a {
+		font-size: 2rem;
+	}
+
+	.left, .right {
+		width: auto;
+		padding-left: 0;
+		padding-right: 0;
+	}
 	
-	.mobile {
+	.mob-column {
+		flex-direction: column;
+	}
+	
+	#jumbo .right, #info .left {
+		margin: 0 2rem;
+	}
+	
+	#jumbo {
+		display: inline-block;
+		width: 100%;
+	}
+	
+	#jumbo .left {
+		background-image: url(../images/banner.jpg);
+		background-size: cover;
+		background-position: right;
+		height: 300px;
+	}
+	
+	.button {
+		width: 100%;
+	}
+	
+	#thesis .left div, #thesis .right {
+		display: none;
+	}
+	
+	.hide-mob {
+		display: none;
+	}
+	
+	.show-mob {
 		display: block;
 	}
+	
+	#info {
+		display: block;
+	}
+	
+	.information {
+		display: block;
+		width: auto;
+		background-color: #FEFCFC;
+		margin: 0;
+		padding: 2rem;
+	}
+
+	.information img {
+		width: 100%;
+		height: auto;
+		padding: 0;
+	}	
+	
+	.information div {
+		width: auto;
+		padding-top: 2rem;
+		margin: 0;
+	}
+	
+	#classes {
+		background-color: #FEFCFC;
+		padding-bottom: 2rem;
+	}
+	
+	#classes .center {
+		padding-bottom: 2rem;
+	}
+	.class {
+		background-color: #DDD;
+		width: auto;
+		margin: .5rem 2rem;
+	}
+	
+	#start h3 {
+		padding: 2rem;
+	}
+	
+	#start a {
+		color: #090306;
+	}
+	
+	#classes {
+		border-top: 1px solid #707878;
+		border-bottom: 1px solid #707878;
+	}
+
+	footer p, footer a {
+		font-size: 1.5rem;
+	}
+	
+	footer .left {
+		padding-left: 2rem;
+	}
+
+	
 }
 
 

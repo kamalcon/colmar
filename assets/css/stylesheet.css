@@ -258,7 +258,7 @@ footer nav ul {
 
 /* Media Queries */
 
-@media only screen and (max-width: 980px) {
+@media only screen and (max-width: 980px), (max-device-width: 980px) {
 	.tab-mob {
 		display: block;
 	}
@@ -293,7 +293,7 @@ footer nav ul {
 	
 }
 
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 780px), (max-device-width: 780px) {
 
 	p {
 		font-size: 2rem;

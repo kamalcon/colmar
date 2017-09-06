@@ -9,7 +9,8 @@ body {
 	background-color: #FEFCFC;
 	color: #090306;
 }
-h1, h2, h3, h4, p, a {
+
+h2, h3, h4, p, a {
 	padding: .5rem 0;
 }
 
@@ -25,19 +26,20 @@ h1 {
 	font-weight: 700;
 	font-size: 5rem;
 	line-height: 6rem;
+	padding: 2rem 0;
 }
 
 h2 {
 	font-weight: 700;
-	font-size: 4rem;
-	line-height: 5rem;
+	font-size: 3.5rem;
+	line-height: 4.5rem;
 	padding-top: 4rem;
 }
 
 h3 {
 	font-weight: 400;
 	font-size: 2.5rem;
-	line-height: 4rem;
+	line-height: 3.5rem;
 }
 
 h4 {
@@ -110,7 +112,7 @@ span {
 }
 
 header nav {
-	padding: 0 3rem;
+	padding: 1rem 3rem;
 }
 
 header nav a {
@@ -125,15 +127,11 @@ header nav a:hover {
 	-webkit-transition: text-decoration 300ms ease-in-out;	
 }
 
-.tab-mob nav {
-	height: 8rem;
-}
-
 /* jumbotron */
 
 .left {
 	width: 60%;
-	padding: 4rem 3rem;
+	padding: 4rem 2rem 4rem 4rem;
 }
 
 .left img {
@@ -143,7 +141,7 @@ header nav a:hover {
 
 .right {
 	width: 40%;
-	padding: 4rem 3rem;
+	padding: 4rem 4rem 4rem 2rem;
 }
 
 .right img {
@@ -154,7 +152,7 @@ header nav a:hover {
 .button {
 	background-color: #32C6A6;
 	width: 50%;
-	margin: 3rem 0;
+	margin-top: 2rem;
 }
 
 .button a {
@@ -174,6 +172,10 @@ header nav a:hover {
 
 /* info section */
 
+#info h2 {
+	padding-top: 2rem;
+} 
+
 .information {
 	width: 100%;
 	background-color: #DDD;
@@ -191,10 +193,6 @@ header nav a:hover {
 	padding-right: 1rem;
 }
 
-.information a {
-	font-size: 1.5rem;
-}
-
 .information a:hover {
 	text-decoration: underline;
 	text-decoration-color: #090306;
@@ -205,15 +203,43 @@ header nav a:hover {
 
 /* start learning section */
 
+.row {
+	margin: 0 2rem;
+}
+
 .class {
 	background-color: #FEFCFC;
 	margin: 2rem;
-	width: 25%;
+	width: 33%;
+	transition: background-color 300ms ease-in-out 50ms;
+	-ms-transition: background-color 300ms ease-in-out 50ms;
+	-moz-transition: background-color 300ms ease-in-out 50ms;
+	-webkit-transition: background-color 300ms ease-in-out 50ms;
+}
+
+.class a {
+	color: #090306;
+}
+
+.class:hover {
+	background-color: rgb(50,198,166);
+}
+
+.class:hover img {
+	opacity: .7;
 }
 
 .class img {
 	width: 100%;
 	height: auto;
+	transition: opacity 300ms ease-in-out 50ms;
+	-ms-transition: opacity 300ms ease-in-out 50ms;
+	-moz-transition: opacity 300ms ease-in-out 50ms;
+	-webkit-transition: opacity 300ms ease-in-out 50ms;
+	backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
 }
 
 .class div {
@@ -259,42 +285,40 @@ footer nav ul {
 /* Media Queries */
 
 @media only screen and (max-width: 980px), (max-device-width: 980px) {
+	
+	header {
+		height: 6rem;
+	}
+	
 	.tab-mob {
 		display: block;
 	}
+	
 	.desktop {
 		display: none;
 	}
 	
-	h1 {
-		font-size: 3.5rem;
-		line-height: 4.5rem;
+	#icon {
+		width: 4rem;
 	}
 	
-	h2 {
+	#logo {
+		padding: 0;
+		display: flex;
+		align-items: center;
 		font-size: 3rem;
-		line-height: 4rem;
-		padding-top: 3rem;
-	}
-	
-	h3 {
-		font-size: 2rem;
-		line-height: 3rem;
-	}
-	
-	p {
-		font-size: 1.5rem;
-		line-height: 2.25rem;
-	}
-	
-	a {
-		font-size: 1.5rem;
+		color: #32C6A6;
 	}
 	
 }
 
 @media only screen and (max-width: 780px), (max-device-width: 780px) {
-
+	
+	h1 {
+		font-size: 4rem;
+		line-height: 5rem;
+	}
+	
 	p {
 		font-size: 2rem;
 		line-height: 3rem;
@@ -308,6 +332,7 @@ footer nav ul {
 		width: auto;
 		padding-left: 0;
 		padding-right: 0;
+		
 	}
 	
 	.mob-column {
@@ -327,7 +352,7 @@ footer nav ul {
 		background-image: url(../images/banner.jpg);
 		background-size: cover;
 		background-position: right;
-		height: 300px;
+		height: 250px;
 	}
 	
 	.button {
@@ -350,6 +375,19 @@ footer nav ul {
 		display: block;
 	}
 	
+	#info .information:first-child {
+		padding-top: 0;
+	}
+	
+	#info .information:last-child {
+		padding-bottom: 0rem;
+	}
+	
+	#info .information:last-child div {
+		border-bottom: 0px;
+		padding-bottom: 0rem;
+	}
+	
 	.information {
 		display: block;
 		width: auto;
@@ -366,8 +404,10 @@ footer nav ul {
 	
 	.information div {
 		width: auto;
-		padding-top: 2rem;
+		padding: 2rem 0;
 		margin: 0;
+		border-bottom: 1px solid #707878;
+		
 	}
 	
 	#classes {
@@ -398,7 +438,7 @@ footer nav ul {
 	}
 
 	footer p, footer a {
-		font-size: 1.5rem;
+		font-size: 1.75rem;
 	}
 	
 	footer .left {

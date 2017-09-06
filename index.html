@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="UTF-8">
     <title>Colmar Academy</title>
 	<link rel="stylesheet" href="assets/css/reset.css" type="text/css">
@@ -52,8 +53,12 @@
 				<img class="hide-mob" src="assets/images/banner.jpg">
 			</div>
 			<div class="right">
+				<div id="logo" class="show-mob">
+					<img id="icon" src="assets/images/ic-logo.svg">
+					<span>COLMAR</span>ACADEMY
+				</div>
 				<h1>Learn something new everyday</h1>
-				<h3>Lorem ipsum dolor sit amet, consectateur adapiscing elit.</h3>
+				<p>Lorem ipsum dolor sit amet, consectateur adapiscing elit.</p>
 				<div class="button">
 					<a href="">Start Here</a>
 				</div>
@@ -106,56 +111,69 @@
 		<div id="classes">
 			<h2 class="center">Start learning</h2>
 			<div id="start" class="hide-mob">
-				<div class="row flex mob-column">
+				<div class="row flex">
 					<div class="class">
-						<img src="assets/images/course-software.jpg">
-						<div>
-							<h3>Software engineering</h3>
-							<h4>COURSES</h4>
-							<p>Web Development, Mobile Development, iOT, APIs</p>
-						</div>
+						<a href="#">
+							<img src="assets/images/course-software.jpg">
+							<div>
+								<h3>Software engineering</h3>
+								<h4>COURSES</h4>
+								<p>Web Development, Mobile Development, iOT, APIs</p>
+							</div>
+						</a>
+					</div>
+					
+					<div class="class">
+						<a href="#">
+							<img src="assets/images/course-computer-art.jpg">
+							<div>
+								<h3>Computer art</h3>
+								<h4>COURSES</h4>
+								<p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
+							</div>
+						</a>
 					</div>
 					<div class="class">
-						<img src="assets/images/course-computer-art.jpg">
-						<div>
-							<h3>Computer art</h3>
-							<h4>COURSES</h4>
-							<p>Imaging &amp; Design, Web Design, Motion Graphics &amp; Visual Effects, Computer Animation</p>
-						</div>
-					</div>
-					<div class="class">
-						<img src="assets/images/course-design.jpg">
-						<div>
-							<h3>Design</h3>
-							<h4>COURSES</h4>
-							<p>User Experience Design, User Research, Visual Design</p>
-						</div>
+						<a href="#">
+							<img src="assets/images/course-design.jpg">
+							<div>
+								<h3>Design</h3>
+								<h4>COURSES</h4>
+								<p>User Experience Design, User Research, Visual Design</p>
+							</div>
+						</a>
 					</div>
 				</div>
-				<div class="row flex mob-column">
+				<div class="row flex">
 					<div class="class">
-						<img src="assets/images/course-data.jpg">
-						<div>
-							<h3>Data</h3>
-							<h4>COURSES</h4>
-							<p>Data Science, Big Data, SQL, Data Visualization</p>
-						</div>
+						<a href="#">
+							<img src="assets/images/course-data.jpg">
+							<div>
+								<h3>Data</h3>
+								<h4>COURSES</h4>
+								<p>Data Science, Big Data, SQL, Data Visualization</p>
+							</div>
+						</a>
 					</div>
 					<div class="class">
-						<img src="assets/images/course-business.jpg">
-						<div>
-							<h3>Business</h3>
-							<h4>COURSES</h4>
-							<p>Product Development, Business Development, Startup</p>
-						</div>
+						<a href="#">
+							<img src="assets/images/course-business.jpg">
+							<div>
+								<h3>Business</h3>
+								<h4>COURSES</h4>
+								<p>Product Development, Business Development, Startup</p>
+							</div>
+						</a>
 					</div>
 					<div class="class">
-						<img src="assets/images/course-marketing.jpg">
-						<div>
-							<h3>Marketing</h3>
-							<h4>COURSES</h4>
-							<p>Analytics, Content Marketing, Mobile Marketing</p>
-						</div>
+						<a href="#">
+							<img src="assets/images/course-marketing.jpg">
+							<div>
+								<h3>Marketing</h3>
+								<h4>COURSES</h4>
+								<p>Analytics, Content Marketing, Mobile Marketing</p>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -184,7 +202,7 @@
 		<!--Thesis section-->
 		
 		<h2 class="center">Thesis exhibit</h2>
-		<div id="thesis" class="flex mob-column">
+		<div id="thesis" class="flex">
 			<div class="left">
 				<video width="100%" height="auto" controls>
   				<source src="assets/videos/thesis.mp4" type="video/mp4">
